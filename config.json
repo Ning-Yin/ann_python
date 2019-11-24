@@ -1,0 +1,21 @@
+{
+  "implement": "python",
+  "dataset": {
+    "x_path": "./ex4x.dat",
+    "y_path": "./ex4y.dat"
+  },
+  "class": 2,
+  "net":{
+    "one_hot": true,
+    "normal": true,
+    "bone": [
+      [2,6],
+      "sigmoid",
+      [6,2],
+      "sigmoid"
+    ],
+    "cost_function": "cross_entropy",
+    "optimizer": ["gradient_descent", 0.1]
+  },
+  "batch_size": 80
+}
